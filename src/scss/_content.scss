@@ -1,0 +1,231 @@
+.content{
+  padding: 35px 0 0;
+}
+
+.banner{
+	align-items: center;
+	background-color: #EBEBEB;
+	color: $tx-color-secondary;
+	display: flex;
+	margin-bottom: 40px;
+	padding: 27px 30px;
+	position: relative;
+	&__title{
+		flex: 0 0 20%;
+		margin-right: 10px;
+		h3{
+			font-size: 37px;
+			span{ 
+				display: block;
+				font-weight: 300;
+				font-size: 22px; 
+			}
+		}
+	}
+	&__text{
+		margin-right: 10px;
+		p{
+			font-weight: 300;
+			line-height: 27px;
+		}
+	}
+	&__close{ color: $tx-color-secondary; }
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		&__close{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+	}
+}
+
+.famous{
+	h2{
+		color: $tx-color-secondary;;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+	}
+	&-content{
+		@media only screen and (max-width: 768px) {
+			display: block !important;
+		}
+	}
+	&__item{
+		height: 550px;
+		margin-bottom: 40px;
+		position: relative;
+		width: 48%;
+		&:after{
+			background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(70%, rgba(0, 0, 0, 0)));
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+			bottom: 0;
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+		img{
+			width: 100%;
+		}
+		&-content{
+			bottom: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 2;
+		}
+		&-info{
+			padding: 20px 40px 30px;
+		}
+		&-status{
+			
+			color: $tx-color-primary;
+			font-size: 16px;
+			left: -40px;
+			padding: 7px;
+			position: absolute;
+			bottom: 5px;
+			&-like{
+				background: $bg-color-primary;
+			}
+			&-dislike{
+				background: $bg-color-secondary;
+				display: none;
+			}
+			
+		}
+		h3{
+			color: $tx-color-primary;
+			font-size: 45px;
+			margin-bottom: 5px;
+			position: relative;
+			@media only screen and (max-width: 768px) {
+				font-size: 35px;
+			}
+		}
+		&-date{
+			color: $tx-color-primary;
+			display: block;
+			font-size: 12px;
+			margin-bottom: 15px;
+			strong{ font-weight: bold; }
+		}
+		p{
+			color: $tx-color-primary;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 25px;
+			margin-bottom: 15px;
+		}
+		label{
+			color: $tx-color-primary;
+			display: inline-block;
+			margin-right: 7px;
+			vertical-align: middle;
+			input[type="radio"]{ display: none; }
+			input[type="radio"]:checked + span{
+				box-shadow: 0px 0px 0px 2px white;
+			}
+		}
+		&-like{
+			background: $bg-color-primary;
+			display: block;
+			padding: 7px;
+		}
+		&-dislike{
+			background: $bg-color-secondary;
+			display: block;
+			padding: 7px;
+		}
+		&-vote{
+			border: 1px solid white;
+			color: $tx-color-primary;
+			display: inline-block;
+			font-size: 14px;
+			padding: 12px 20px;
+			transition: linear 0.2s all;
+			vertical-align: middle;
+			&:hover{
+				background: rgba(255,255,255,0.2);
+			}
+		}
+		&-score{
+			display: flex;
+			left: 0;
+			width: 100%;
+		}
+		&-vote-again{
+			display: none;
+		}
+		@media only screen and (max-width: 768px) {
+			height: auto;
+			width: 100%;
+		}
+	}
+	.score__item{
+		color: $tx-color-primary;
+		padding: 15px;
+		font-weight: 300;
+		font-size: 20px;
+		height: 50px;
+		&-like{
+			background: $bg-color-primary-opacity;
+			width: 70%;
+			span{
+				left: 10px;
+			}
+		}
+		&-dislike{
+			background: $bg-color-secondary-opacity;
+			width: 30%;
+			span{
+				right: 0px;
+			}
+		}
+		span{
+			display: flex;
+			position: absolute;
+			width: 80px;
+			z-index: 2;
+			i{ margin-right: 5px; }
+			span{
+				position: relative;
+				width: auto;
+			}
+		}
+	}
+}
+
+.submit{
+	align-items: center;
+	background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('./assets/info.jpg') no-repeat;
+	color: #333;
+	display: flex;
+	font-size: 30px;
+	justify-content: space-between;
+	margin-bottom: 38px;
+	padding: 15px 20px;
+	p{
+		font-weight: 300;
+	}
+	&__button{
+		border: 3px solid #333333;
+    color: $tx-color-secondary;
+    font-size: 20px;
+    padding: 13px 35px;
+		transition: all .2s linear;
+		&:hover{ background: rgba(170, 170, 170, 0.8); }
+		@media only screen and (max-width: 768px) {
+			border: 1px solid #333333;
+			font-size: 13px;
+			padding: 10px 15px;
+			min-width: 125px;
+		}	
+	}
+	@media only screen and (max-width: 768px) {
+		font-size: 12px;
+		padding: 10px;
+	}
+}

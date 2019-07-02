@@ -1,0 +1,40 @@
+{
+  "famous": [
+    {
+      "name": "Kanye West",
+      "photo": "./assets/famous1.jpg",
+      "category": "Entertainment",
+      "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "like": "64",
+      "dislike": "36",
+      "current": "like"
+    },
+    {
+      "name": "Mark Zuckerberg",
+      "photo": "./assets/famous2.jpg",
+      "category": "Business",
+      "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "like": "36",
+      "dislike": "64",
+      "current": "dislike"
+    },
+    {
+      "name": "Cristina Fernández de Kirchner",
+      "photo": "./assets/famous3.jpg",
+      "category": "Politics",
+      "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "like": "36",
+      "dislike": "64",
+      "current": "dislike"
+    },
+    {
+      "name": "Malala Yousafzai",
+      "photo": "./assets/famous4.jpg",
+      "category": "Entertainment",
+      "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+      "like": "64",
+      "dislike": "36",
+      "current": "like"
+    }
+  ]
+}    
